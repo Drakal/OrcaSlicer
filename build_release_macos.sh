@@ -26,7 +26,7 @@ while getopts ":dpa:snt:xbc:h" opt; do
     x )
         export SLICER_CMAKE_GENERATOR="Ninja Multi-Config"
         export SLICER_BUILD_TARGET="all"
-        export DEPS_CMAKE_GENERATOR="Ninja"
+        export DEPS_CMAKE_GENERATOR="Ninja Multi-Config"
         ;;
     b )
         export BUILD_ONLY="1"
